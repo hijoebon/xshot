@@ -1,0 +1,15 @@
+{
+  "family": "Caveat",
+  "style": "normal",
+  "weight": "400 700",
+  "format": "woff2",
+  "subset": "latin",
+  "source": "https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap",
+  "downloadUrl": "https://fonts.gstatic.com/s/caveat/v23/Wnz6HAc5bAfYB2Q7ZjYYiAzcPA.woff2",
+  "upstream": "https://github.com/google/fonts/tree/main/ofl/caveat",
+  "license": "Caveat-OFL.txt",
+  "licenseSource": "https://raw.githubusercontent.com/google/fonts/main/ofl/caveat/OFL.txt",
+  "bytes": 74572,
+  "sha256": "7a0049db01fdd8fc7af7ef36675862a72a5c76d0cb45ae63c9f5b6f1b769dac7",
+  "downloadedAt": "2026-11-01T15:31:08.612239+00:00"
+}

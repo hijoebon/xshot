@@ -1,0 +1,137 @@
+[
+  {
+    "asset": "selection.webp",
+    "origin": "artifacts/product-demo-20261101/selection-preview.png",
+    "kind": "pre-existing product screenshot",
+    "note": "Real XShot interface. Launchboard is demonstration content."
+  },
+  {
+    "asset": "beauty.webp",
+    "origin": "artifacts/product-demo-20261101/beauty-preview.png",
+    "kind": "pre-existing product screenshot",
+    "note": "Real XShot interface. Launchboard is demonstration content."
+  },
+  {
+    "asset": "studio.webp",
+    "origin": "artifacts/product-demo-20261101/studio-preview.png",
+    "kind": "pre-existing product screenshot",
+    "note": "Real XShot interface. Launchboard is demonstration content."
+  },
+  {
+    "asset": "pin.webp",
+    "origin": "artifacts/product-demo-20261101/pin-preview.png",
+    "kind": "pre-existing product screenshot",
+    "note": "Real XShot interface. Launchboard is demonstration content."
+  },
+  {
+    "asset": "settings.webp",
+    "origin": "artifacts/settings-checks/settings-default.png",
+    "kind": "pre-existing product screenshot",
+    "note": "Existing XShot asset."
+  },
+  {
+    "asset": "app-icon.webp",
+    "origin": "Design/Logo/Final/exports/web/icon-512.png",
+    "kind": "existing approved brand asset",
+    "note": "Existing XShot asset."
+  },
+  {
+    "asset": "home.webp",
+    "origin": "artifacts/product-demo-20261101/v3/web/assets/xshot-main-window.png",
+    "kind": "pre-existing product screenshot",
+    "note": "Existing XShot asset."
+  },
+  {
+    "asset": "mark.svg",
+    "origin": "Design/Logo/Final/masters/xshot-symbol-small.svg",
+    "kind": "existing approved brand asset"
+  },
+  {
+    "asset": "favicon.svg",
+    "origin": "Design/Logo/Final/exports/web/favicon.svg",
+    "kind": "existing approved brand asset"
+  },
+  {
+    "asset": "apple-touch-icon.png",
+    "origin": "Design/Logo/Final/exports/web/apple-touch-icon.png",
+    "kind": "existing approved brand asset"
+  },
+  {
+    "asset": "hero-editor.webp",
+    "origin": "artifacts/product-demo-20261101/beauty-preview.png",
+    "kind": "pre-existing product screenshot",
+    "note": "Cropped exterior desktop only; 2160 x 1612; complete real XShot toolbar and beautification popover retained. See assets/hero-editor.webp.json."
+  },
+  {
+    "asset": "dm-sans.woff2",
+    "origin": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2",
+    "kind": "self-hosted open font",
+    "note": "DM Sans variable Latin, normal 400-900. OFL license in assets/DM-Sans-OFL.txt; provenance in assets/dm-sans-source.json."
+  },
+  {
+    "asset": "caveat.woff2",
+    "origin": "https://fonts.gstatic.com/s/caveat/v23/Wnz6HAc5bAfYB2Q7ZjYYiAzcPA.woff2",
+    "kind": "self-hosted open font",
+    "note": "Caveat variable Latin, normal 400-700, for short annotations only. OFL license in assets/Caveat-OFL.txt; provenance in assets/caveat-source.json."
+  },
+  {
+    "asset": "plates/main-ribbon.png",
+    "origin": "assets/hero-editor.webp",
+    "kind": "authentic product screenshot crop",
+    "note": "Editorial cutaway composed only from real screenshot crops, uniformly scaled within each crop. Full native toolbar, useful canvas details and complete styling popover. See assets/plates/main-ribbon.png.json."
+  },
+  {
+    "asset": "wordmark.svg",
+    "origin": "Design/Logo/Final/masters/xshot-horizontal-color.svg",
+    "kind": "existing approved brand asset"
+  },
+  {
+    "asset": "wordmark-white.svg",
+    "origin": "Design/Logo/Final/masters/xshot-horizontal-white.svg",
+    "kind": "existing approved brand asset"
+  },
+  {
+    "asset": "xshot-sans.woff2",
+    "origin": "assets/font-source.json",
+    "kind": "self-hosted open font",
+    "note": "Noto Sans SC variable Chinese subset. OFL license assets/OFL.txt."
+  },
+  {
+    "asset": "plates/native-editor.png",
+    "origin": "assets/hero-editor.webp",
+    "kind": "authentic product screenshot texture",
+    "note": "Authentic existing XShot screenshot texture. Source website/assets/hero-editor.webp. Lossless PNG encoding of decoded source pixels for the measured blue-layered website plate pipeline. No controls or text synthesized; no content change. The website applies runtime transforms/cylindrical WebGL paper bending. Launchboard is demonstration content."
+  },
+  {
+    "asset": "plates/capture-preview.png",
+    "origin": "assets/selection.webp",
+    "kind": "authentic product screenshot texture",
+    "note": "Authentic existing XShot screenshot texture. Source website/assets/selection.webp. Lossless PNG encoding of decoded source pixels for the measured blue-layered website plate pipeline. No controls or text synthesized; no content change. The website applies runtime transforms/cylindrical WebGL paper bending. Launchboard is demonstration content."
+  },
+  {
+    "asset": "plates/style-preview.png",
+    "origin": "assets/beauty.webp",
+    "kind": "authentic product screenshot texture",
+    "note": "Authentic existing XShot screenshot texture. Source website/assets/beauty.webp. Lossless PNG encoding of decoded source pixels for the measured blue-layered website plate pipeline. No controls or text synthesized; no content change. The website applies runtime transforms/cylindrical WebGL paper bending. Launchboard is demonstration content."
+  },
+  {
+    "asset": "plates/demo-preview.png",
+    "origin": "assets/studio.webp",
+    "kind": "authentic product screenshot texture",
+    "note": "Authentic existing XShot screenshot texture. Source website/assets/studio.webp. Lossless PNG encoding of decoded source pixels for the measured blue-layered website plate pipeline. No controls or text synthesized; no content change. The website applies runtime transforms/cylindrical WebGL paper bending. Launchboard is demonstration content."
+  },
+  {
+    "asset": "zhi-mang-xing.ttf",
+    "origin": "https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&text=%E4%BA%AB%E5%88%86%E5%8E%9F%E5%9B%BE%E5%A7%8B%E5%BC%80%E6%88%AA%E6%99%B0%E6%9E%9C%E6%A0%87%E6%B3%A8%E6%B8%85%E7%94%BB%E7%9A%84%E7%BB%93%E8%89%B2%E8%93%9D%E9%9D%A2&display=swap",
+    "kind": "self-hosted open font",
+    "note": "Zhi Mang Xing Chinese handwriting, selected for the user-pinned reference captions; Google Fonts glyph subset and OFL license included."
+  },
+  {
+    "asset": "demos/release-workflow.html",
+    "origin": "artifacts/product-demo-20261101/v5/exports/Release workflow.html",
+    "kind": "authentic unmodified XShot HTML export",
+    "sha256": "5225873921a27d345aac47c9d1b1f44b4dd88c835215d0e4511445ed44ca6c73",
+    "bytes": 3470675,
+    "note": "Five embedded screenshot steps and four click hotspots. English demonstration build; Launchboard is sample content. Byte-identical to source. See demos/manifest.json for full provenance and behavior boundaries."
+  }
+]

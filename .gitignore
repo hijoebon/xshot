@@ -31,3 +31,10 @@ credentials.json
 secrets.json
 secrets.yml
 secrets.yaml
+
+# Local site tooling, design evidence and working copies of public images
+.playwright-cli/
+/.impeccable/*
+!/.impeccable/design.json
+/website/.openai/
+/assets/plates/

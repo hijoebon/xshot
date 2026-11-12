@@ -1,0 +1,10 @@
+{
+  "prompt": "Authentic existing XShot screenshot texture. Source website/assets/hero-editor.webp. Lossless PNG encoding of decoded source pixels for the measured blue-layered website plate pipeline. No controls or text synthesized; no content change. The website applies runtime transforms/cylindrical WebGL paper bending. Launchboard is demonstration content.",
+  "source": "website/assets/hero-editor.webp",
+  "sourceSha256": "4a0ba26ba75131bdc2575268cf8313e4209ad292397b6cdcc226ecff710c5972",
+  "dimensions": [
+    2160,
+    1612
+  ],
+  "kind": "authentic screenshot texture, lossless decoded-pixel conversion"
+}

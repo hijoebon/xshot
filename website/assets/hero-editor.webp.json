@@ -1,0 +1,25 @@
+{
+  "asset": "hero-editor.webp",
+  "kind": "pre-existing product screenshot, cropped and deterministically encoded",
+  "source": "artifacts/product-demo-20261101/beauty-preview.png",
+  "sourceSize": [
+    2880,
+    1620
+  ],
+  "crop": [
+    360,
+    8,
+    2160,
+    1612
+  ],
+  "dimensions": [
+    2160,
+    1612
+  ],
+  "encoding": "cwebp quality=91 method=6 sharp_yuv",
+  "sourceSha256": "8fa62a96f18e03dc66006c733736354c4c05a3559bd75320d378a6b3a84f3f4f",
+  "assetSha256": "4a0ba26ba75131bdc2575268cf8313e4209ad292397b6cdcc226ecff710c5972",
+  "createdAt": "2026-11-01T15:42:28.595Z",
+  "note": "Real XShot editor with original toolbar and complete screenshot-beautification popover. Launchboard is demonstration content. Cropping removes only the exterior desktop at left, right and top. No synthesized interface.",
+  "prompt": "Pre-existing authentic XShot screenshot from artifacts/product-demo-20261101/beauty-preview.png; source SHA256 8fa62a96f18e03dc66006c733736354c4c05a3559bd75320d378a6b3a84f3f4f; crop [360, 8, 2160, 1612]; Real XShot editor with original toolbar and complete screenshot-beautification popover. Launchboard is demonstration content. Cropping removes only the exterior desktop at left, right and top. No synthesized interface."
+}

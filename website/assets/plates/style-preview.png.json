@@ -1,0 +1,10 @@
+{
+  "prompt": "Authentic existing XShot screenshot texture. Source website/assets/beauty.webp. Lossless PNG encoding of decoded source pixels for the measured blue-layered website plate pipeline. No controls or text synthesized; no content change. The website applies runtime transforms/cylindrical WebGL paper bending. Launchboard is demonstration content.",
+  "source": "website/assets/beauty.webp",
+  "sourceSha256": "d4051ca47a3aeb514ba11530582300c8d7938a8e0c96ac0e11a9892140b331d5",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "kind": "authentic screenshot texture, lossless decoded-pixel conversion"
+}

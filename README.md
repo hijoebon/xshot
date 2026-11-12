@@ -1,25 +1,23 @@
 # XShot
 
-![XShot 标志（产品截图占位）](Resources/Logo/XShotMark.png)
-
-*上图为现有项目标志，暂作展示占位；需要用户提供产品截图/GIF。*
+![XShot 标志](Resources/Logo/XShotMark.png)
 
 独立实现的原生 macOS 截图与产品演示工具。0.2.0 包含窗口、区域与整屏截图、标注、复制与 PNG 保存、桌面贴图，以及自动缩放录屏和可点击步骤演示。
 
-## 运行
+## 下载与运行
 
-双击 `Run XShot.command`，或运行 `./scripts/build.sh` 后打开 `dist/XShot.app`。需要 Apple Silicon Mac、macOS 14 或更新系统和 Xcode Command Line Tools。
+在 [GitHub Releases](https://github.com/hijoebon/xshot/releases/latest) 下载 DMG，打开后将 XShot 拖入“应用程序”。需要 Apple Silicon Mac 和 macOS 14 或更新系统。
 
-构建后可将 `dist/XShot.app` 拖入“应用程序”，再从聚焦搜索 XShot 启动。
+如需从源码构建，先安装 Xcode Command Line Tools，再双击 `Run XShot.command`，或运行 `./scripts/build.sh` 后打开 `dist/XShot.app`。
 
 全局快捷键为 **⌥X（Option + X）** 截图、**⌥R（Option + R）** 打开产品演示或完成录制、**⌥P（Option + P）** 暂停/继续录制；菜单栏也提供入口。首次截图或录制需允许 XShot 访问屏幕，刚授权后若无法采集，请重新打开应用。未授权时仍可打开本地图片进行标注。
 
 ## 安装 / 故障排除（非 App Store）
 
-XShot **不在 App Store**。直接下载或自行构建的 `XShot.app` 首次打开时，macOS 可能提示「已损坏，无法打开」或「无法打开，因为来自身份不明的开发者」。这通常是 Gatekeeper / 隔离属性导致，可按下面步骤处理：
+GitHub 安装包使用临时签名，未经过 Apple 公证。直接下载或自行构建的 `XShot.app` 首次打开时，可能被 macOS 的 Gatekeeper 拦截。确认下载来源后，可按下面步骤处理：
 
-1. **右键打开**：在 Finder 中对 `XShot.app` 按住 Control 点击（或右键）→ 选择「打开」→ 在对话框中再点「打开」。第一次需要这样绕过 Gatekeeper。
-2. **系统设置放行**：打开「系统设置」→「隐私与安全性」，在被拦下的提示附近点「仍要打开」/允许该 App。截图与录制还需在「屏幕与系统音频录制」中授权。
+1. **系统设置放行**：先尝试打开一次，再进入「系统设置」→「隐私与安全性」，在被拦下的提示附近点「仍要打开」。参见 [Apple 的说明](https://support.apple.com/zh-cn/102445)。截图与录制还需在「屏幕与系统音频录制」中授权。
+2. **旧版 macOS**：也可在 Finder 中对 `XShot.app` 按住 Control 点击（或右键），选择「打开」，并确认对话框。
 3. **清除隔离属性**（仍打不开时，在终端执行，路径按实际位置改）：
 
 ```bash

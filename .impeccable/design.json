@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T01:38:27.985733+00:00",
+  "title": "Design System: XShot Website",
+  "extensions": {
+    "colorMeta": {
+      "hero-bright": {
+        "role": "primary",
+        "displayName": "Bright Paper Blue",
+        "canonical": "#3974f7",
+        "tonalRamp": [
+          "oklch(15% 0.0640 263.3)",
+          "oklch(27% 0.1120 263.3)",
+          "oklch(39% 0.1440 263.3)",
+          "oklch(51% 0.1600 263.3)",
+          "oklch(63% 0.1600 263.3)",
+          "oklch(75% 0.1360 263.3)",
+          "oklch(87% 0.0800 263.3)",
+          "oklch(95% 0.0240 263.3)"
+        ]
+      },
+      "hero-blue": {
+        "role": "primary",
+        "displayName": "Paper Blue",
+        "canonical": "#346bf1",
+        "tonalRamp": [
+          "oklch(15% 0.0640 264.0)",
+          "oklch(27% 0.1120 264.0)",
+          "oklch(39% 0.1440 264.0)",
+          "oklch(51% 0.1600 264.0)",
+          "oklch(63% 0.1600 264.0)",
+          "oklch(75% 0.1360 264.0)",
+          "oklch(87% 0.0800 264.0)",
+          "oklch(95% 0.0240 264.0)"
+        ]
+      },
+      "hero-deep": {
+        "role": "primary",
+        "displayName": "Deep Paper Blue",
+        "canonical": "#2b5fe9",
+        "tonalRamp": [
+          "oklch(15% 0.0640 264.4)",
+          "oklch(27% 0.1120 264.4)",
+          "oklch(39% 0.1440 264.4)",
+          "oklch(51% 0.1600 264.4)",
+          "oklch(63% 0.1600 264.4)",
+          "oklch(75% 0.1360 264.4)",
+          "oklch(87% 0.0800 264.4)",
+          "oklch(95% 0.0240 264.4)"
+        ]
+      },
+      "blue": {
+        "role": "primary",
+        "displayName": "Capture Blue",
+        "canonical": "#1768f6",
+        "tonalRamp": [
+          "oklch(15% 0.0640 261.2)",
+          "oklch(27% 0.1120 261.2)",
+          "oklch(39% 0.1440 261.2)",
+          "oklch(51% 0.1600 261.2)",
+          "oklch(63% 0.1600 261.2)",
+          "oklch(75% 0.1360 261.2)",
+          "oklch(87% 0.0800 261.2)",
+          "oklch(95% 0.0240 261.2)"
+        ]
+      },
+      "brand": {
+        "role": "primary",
+        "displayName": "Identity Blue",
+        "canonical": "#3478f6",
+        "tonalRamp": [
+          "oklch(15% 0.0640 261.4)",
+          "oklch(27% 0.1120 261.4)",
+          "oklch(39% 0.1440 261.4)",
+          "oklch(51% 0.1600 261.4)",
+          "oklch(63% 0.1600 261.4)",
+          "oklch(75% 0.1360 261.4)",
+          "oklch(87% 0.0800 261.4)",
+          "oklch(95% 0.0240 261.4)"
+        ]
+      },
+      "action": {
+        "role": "primary",
+        "displayName": "Reading Blue",
+        "canonical": "#195ecc",
+        "tonalRamp": [
+          "oklch(15% 0.0640 260.0)",
+          "oklch(27% 0.1120 260.0)",
+          "oklch(39% 0.1440 260.0)",
+          "oklch(51% 0.1600 260.0)",
+          "oklch(63% 0.1600 260.0)",
+          "oklch(75% 0.1360 260.0)",
+          "oklch(87% 0.0800 260.0)",
+          "oklch(95% 0.0240 260.0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Page Ink",
+        "canonical": "#10121c",
+        "tonalRamp": [
+          "oklch(15% 0.0083 275.4)",
+          "oklch(27% 0.0145 275.4)",
+          "oklch(39% 0.0186 275.4)",
+          "oklch(51% 0.0207 275.4)",
+          "oklch(63% 0.0207 275.4)",
+          "oklch(75% 0.0176 275.4)",
+          "oklch(87% 0.0104 275.4)",
+          "oklch(95% 0.0031 275.4)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Slate Text",
+        "canonical": "#5d687d",
+        "tonalRamp": [
+          "oklch(15% 0.0144 263.3)",
+          "oklch(27% 0.0252 263.3)",
+          "oklch(39% 0.0324 263.3)",
+          "oklch(51% 0.0360 263.3)",
+          "oklch(63% 0.0360 263.3)",
+          "oklch(75% 0.0306 263.3)",
+          "oklch(87% 0.0180 263.3)",
+          "oklch(95% 0.0054 263.3)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Cool Rule",
+        "canonical": "#e0e5ef",
+        "tonalRamp": [
+          "oklch(15% 0.0058 264.5)",
+          "oklch(27% 0.0102 264.5)",
+          "oklch(39% 0.0131 264.5)",
+          "oklch(51% 0.0146 264.5)",
+          "oklch(63% 0.0146 264.5)",
+          "oklch(75% 0.0124 264.5)",
+          "oklch(87% 0.0073 264.5)",
+          "oklch(95% 0.0022 264.5)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Code Mist",
+        "canonical": "#f0f4fc",
+        "tonalRamp": [
+          "oklch(15% 0.0046 264.5)",
+          "oklch(27% 0.0081 264.5)",
+          "oklch(39% 0.0104 264.5)",
+          "oklch(51% 0.0115 264.5)",
+          "oklch(63% 0.0115 264.5)",
+          "oklch(75% 0.0098 264.5)",
+          "oklch(87% 0.0058 264.5)",
+          "oklch(95% 0.0017 264.5)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Paper",
+        "canonical": "#f8faff",
+        "tonalRamp": [
+          "oklch(15% 0.0028 268.5)",
+          "oklch(27% 0.0049 268.5)",
+          "oklch(39% 0.0063 268.5)",
+          "oklch(51% 0.0070 268.5)",
+          "oklch(63% 0.0070 268.5)",
+          "oklch(75% 0.0059 268.5)",
+          "oklch(87% 0.0035 268.5)",
+          "oklch(95% 0.0010 268.5)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "White Paper",
+        "canonical": "#fff",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(27% 0.0000 0.0)",
+          "oklch(39% 0.0000 0.0)",
+          "oklch(51% 0.0000 0.0)",
+          "oklch(63% 0.0000 0.0)",
+          "oklch(75% 0.0000 0.0)",
+          "oklch(87% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Sheet White",
+        "canonical": "#f6f8ff",
+        "tonalRamp": [
+          "oklch(15% 0.0038 273.4)",
+          "oklch(27% 0.0067 273.4)",
+          "oklch(39% 0.0086 273.4)",
+          "oklch(51% 0.0095 273.4)",
+          "oklch(63% 0.0095 273.4)",
+          "oklch(75% 0.0081 273.4)",
+          "oklch(87% 0.0048 273.4)",
+          "oklch(95% 0.0014 273.4)"
+        ]
+      },
+      "feature-tile": {
+        "role": "neutral",
+        "displayName": "Feature Mist",
+        "canonical": "#e9f0ff",
+        "tonalRamp": [
+          "oklch(15% 0.0086 265.8)",
+          "oklch(27% 0.0151 265.8)",
+          "oklch(39% 0.0194 265.8)",
+          "oklch(51% 0.0215 265.8)",
+          "oklch(63% 0.0215 265.8)",
+          "oklch(75% 0.0183 265.8)",
+          "oklch(87% 0.0108 265.8)",
+          "oklch(95% 0.0032 265.8)"
+        ]
+      },
+      "demo-stage": {
+        "role": "neutral",
+        "displayName": "Demo Night",
+        "canonical": "#121e35",
+        "tonalRamp": [
+          "oklch(15% 0.0191 262.4)",
+          "oklch(27% 0.0334 262.4)",
+          "oklch(39% 0.0429 262.4)",
+          "oklch(51% 0.0477 262.4)",
+          "oklch(63% 0.0477 262.4)",
+          "oklch(75% 0.0405 262.4)",
+          "oklch(87% 0.0238 262.4)",
+          "oklch(95% 0.0071 262.4)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The compact white English homepage statement."
+      },
+      "display-zh": {
+        "displayName": "Display Zh",
+        "purpose": "The heavier Chinese display fitting."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Detailed promotional-section headings."
+      },
+      "overview-title": {
+        "displayName": "Overview Title",
+        "purpose": "Introductions in the three-column overview."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Short hero explanation."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Documentation reading text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Normal blue action labels."
+      },
+      "hero-label": {
+        "displayName": "Hero Label",
+        "purpose": "The white main action label."
+      },
+      "annotation": {
+        "displayName": "Annotation",
+        "purpose": "Short English external layer captions."
+      },
+      "annotation-zh": {
+        "displayName": "Annotation Zh",
+        "purpose": "Chinese external layer captions in the handwriting subset."
+      },
+      "paper-note": {
+        "displayName": "Paper Note",
+        "purpose": "The short note within the marked sheet margin."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Factual evidence and local-project captions."
+      }
+    },
+    "shadows": [
+      {
+        "name": "front-sheet",
+        "value": "drop-shadow(0 20px 16px #062c9366)",
+        "purpose": "CSS filter beneath the curled front sheet."
+      },
+      {
+        "name": "rear-sheet",
+        "value": "0 18px 27px #0e308c40",
+        "purpose": "Diffuse separation between the pale screenshot planes."
+      },
+      {
+        "name": "preview-lift",
+        "value": "0 10px 23px #203c6a12",
+        "purpose": "Grounding beneath overview screenshot previews."
+      },
+      {
+        "name": "promotional-action",
+        "value": "0 10px 26px #113b9724",
+        "purpose": "Homepage button hover response."
+      },
+      {
+        "name": "reading-action",
+        "value": "0 8px 24px #1854a925",
+        "purpose": "Blue button hover on reading surfaces."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Shared transform and paper-opening easing."
+      },
+      {
+        "name": "paper-unfurl",
+        "value": "4.8s",
+        "purpose": "Finite native CSS animation clock sampled through the Web Animations API to drive the mesh."
+      },
+      {
+        "name": "paper-middle",
+        "value": "1.2s",
+        "purpose": "Middle sheet moves from a tucked to a visible layer."
+      },
+      {
+        "name": "paper-bottom",
+        "value": "1.5s",
+        "purpose": "Back sheet settles below the other sheets."
+      },
+      {
+        "name": "paper-note",
+        "value": "1.4s with 1s delay",
+        "purpose": "Short paper annotation appears after the sheets begin opening."
+      },
+      {
+        "name": "preview-feedback",
+        "value": "600ms image transform; 250–500ms selection and focus detail",
+        "purpose": "Local pointer feedback in the overview."
+      },
+      {
+        "name": "proof-settle",
+        "value": "450ms",
+        "purpose": "The lower gallery acknowledges a decoded image replacement."
+      },
+      {
+        "name": "folder-open",
+        "value": "280ms",
+        "purpose": "Local project disclosure."
+      },
+      {
+        "name": "paper-direct-peel",
+        "value": "mesh progress 1–2.2; pointer-captured corner drag toward upper left",
+        "purpose": "Mouse, touch and pen directly open the real screenshot mesh; the same native button toggles with click, Enter or Space."
+      },
+      {
+        "name": "paper-settle",
+        "value": "420ms; quartic ease-out; rest1/open2.2; reduced-motion instant",
+        "purpose": "Finite settling after a direct peel; no continuous idle rendering or automatic interaction loop."
+      },
+      {
+        "name": "paper-sheet-drag",
+        "value": "horizontal ±45px; vertical ±35px; reset on release",
+        "purpose": "Bounded direct manipulation of the rear sheets; numbered caption buttons also reveal capture, marked or finished context."
+      },
+      {
+        "name": "paper-keyboard",
+        "value": "Left/Up open; Right/Down close; End fully open; Home/Escape restore",
+        "purpose": "Keyboard access to the corner and sheet states, with Escape cancelling a captured gesture and returning focus."
+      },
+      {
+        "name": "paper-fallback",
+        "value": "authentic image shift with the same button and keyboard controls",
+        "purpose": "Keeps backing-sheet reveal available when WebGL or texture initialization fails."
+      },
+      {
+        "name": "render-lifecycle",
+        "value": "finite opening or 420ms settle; direct-input redraw; idle/hidden/offscreen stop; resize redraw",
+        "purpose": "Bounds rendering to direct manipulation and finite transitions; replay restores the default sheet offsets and finished layer."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "static initial curl; direct drag; instant click/keyboard changes; no hover lift or settle tween",
+        "purpose": "Preserves corner and layer controls without automatic playback; keeps the authentic-image fallback interactive."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "max-mobile",
+        "value": "760px"
+      },
+      {
+        "name": "max-medium",
+        "value": "1150px"
+      },
+      {
+        "name": "min-wide",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Reading Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Blue action on quiet white reading surfaces.",
+      "html": "<a class=\"ds-primary\" href=\"#getting-started\">Get started <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-primary{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;border:1px solid transparent;cursor:pointer;text-decoration:none;line-height:1.5;font-family:'DM Sans','XShot Sans',sans-serif;transition:background .18s,transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s cubic-bezier(.16,1,.3,1);gap:24px;padding:16px 24px;background:var(--blue,#1768f6);color:#fff;border-radius:9px;font-weight:650;font-size:15px;min-height:54px;} .ds-primary:hover{background:#1255cc;color:#fff;transform:translateY(-2px);box-shadow:0 8px 24px #1854a925} .ds-primary svg{transition:transform .25s cubic-bezier(.16,1,.3,1)} .ds-primary:hover svg{transform:translateX(3px)} .ds-primary:focus-visible{outline:3px solid var(--brand,#3478f6);outline-offset:5px;} @media(prefers-reduced-motion:reduce){.ds-primary,.ds-primary svg{transition:none}}"
+    },
+    {
+      "name": "Hero White Pill",
+      "kind": "button",
+      "refersTo": "button-hero",
+      "description": "The main white action within the saturated blue hero.",
+      "html": "<div class=\"ds-blue-field\"><a class=\"ds-hero-button\" href=\"#getting-started\">Get started <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
+      "css": ".ds-hero-button{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;border:1px solid transparent;cursor:pointer;text-decoration:none;line-height:1.5;font-family:'DM Sans','XShot Sans',sans-serif;transition:background .18s,transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s cubic-bezier(.16,1,.3,1);gap:24px;padding:16px 28px;background:#fff;color:#1c3685;border-radius:40px;font-weight:700;font-size:17px;min-height:58px;min-width:194px;} .ds-hero-button:hover{background:#f1f5ff;color:#1540b5;transform:translateY(-2px);box-shadow:0 10px 26px #113b9724} .ds-hero-button svg{transition:transform .25s cubic-bezier(.16,1,.3,1)} .ds-hero-button:hover svg{transform:translateX(3px)} .ds-hero-button:focus-visible{outline:3px solid var(--brand,#3478f6);outline-offset:5px;} @media(prefers-reduced-motion:reduce){.ds-hero-button,.ds-hero-button svg{transition:none}} .ds-hero-button>svg{width:22px} @media(max-width:1150px) and (min-width:761px){.ds-hero-button{font-size:15px;min-height:52px;min-width:165px}} @media(max-width:760px){.ds-hero-button{font-size:15px;min-height:50px;min-width:170px;padding:13px 23px}}.ds-blue-field{background:linear-gradient(118deg,#3974f7 0%,#346bf1 44%,#2b5fe9 100%);padding:24px}"
+    },
+    {
+      "name": "Header White Pill",
+      "kind": "button",
+      "refersTo": "button-header",
+      "description": "A smaller white pill in the promotional header.",
+      "html": "<div class=\"ds-blue-field\"><a class=\"ds-header-button\" href=\"#getting-started\">Get started <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
+      "css": ".ds-header-button{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;border:1px solid transparent;cursor:pointer;text-decoration:none;line-height:1.5;font-family:'DM Sans','XShot Sans',sans-serif;transition:background .18s,transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s cubic-bezier(.16,1,.3,1);gap:13px;padding:11px 22px;background:#fff;color:#1b51d9;border-radius:30px;font-weight:650;font-size:12px;min-height:42px;} .ds-header-button:hover{background:#eaf1ff;color:#1641b4;transform:translateY(-2px);box-shadow:0 10px 26px #113b9724} .ds-header-button svg{transition:transform .25s cubic-bezier(.16,1,.3,1)} .ds-header-button:hover svg{transform:translateX(3px)} .ds-header-button:focus-visible{outline:3px solid var(--brand,#3478f6);outline-offset:5px;} @media(prefers-reduced-motion:reduce){.ds-header-button,.ds-header-button svg{transition:none}}.ds-blue-field{background:linear-gradient(118deg,#3974f7 0%,#346bf1 44%,#2b5fe9 100%);padding:24px}"
+    },
+    {
+      "name": "Reading Compact Button",
+      "kind": "button",
+      "refersTo": "button-reading-compact",
+      "description": "The compact blue header action used on help surfaces.",
+      "html": "<a class=\"ds-compact\" href=\"#getting-started\">Get started <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-compact{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;border:1px solid transparent;cursor:pointer;text-decoration:none;line-height:1.5;font-family:'DM Sans','XShot Sans',sans-serif;transition:background .18s,transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s cubic-bezier(.16,1,.3,1);gap:12px;padding:10px 18px;background:var(--blue,#1768f6);color:#fff;border-radius:9px;font-weight:650;font-size:13px;min-height:40px;} .ds-compact:hover{background:#1255cc;color:#fff;transform:translateY(-2px);box-shadow:0 8px 24px #1854a925} .ds-compact svg{transition:transform .25s cubic-bezier(.16,1,.3,1)} .ds-compact:hover svg{transform:translateX(3px)} .ds-compact:focus-visible{outline:3px solid var(--brand,#3478f6);outline-offset:5px;} @media(prefers-reduced-motion:reduce){.ds-compact,.ds-compact svg{transition:none}}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "A secondary reading action with directional hover feedback.",
+      "html": "<a class=\"ds-text-link\" href=\"#guide\">Read the guide <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-text-link{display:inline-flex;align-items:center;gap:12px;font-size:14px;font-weight:600;color:var(--action,#195ecc);text-decoration:none;font-family:'DM Sans','XShot Sans',sans-serif;} .ds-text-link svg{transition:transform .25s cubic-bezier(.16,1,.3,1)} .ds-text-link:hover svg{transform:translateX(4px)} .ds-text-link:focus-visible{outline:3px solid var(--brand,#3478f6);outline-offset:5px;} @media(prefers-reduced-motion:reduce){.ds-text-link svg{transition:none}}"
+    },
+    {
+      "name": "Documentation Search",
+      "kind": "input",
+      "refersTo": "search-input",
+      "description": "Quiet search with an inset SVG and shared keyboard focus.",
+      "html": "<div class=\"ds-search\"><label for=\"ds-search-field\">Search documentation</label><div class=\"ds-search-wrap\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\" stroke=\"currentColor\" stroke-width=\"1.7\"/><path d=\"m16 16 4 4\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\"/></svg><input id=\"ds-search-field\" type=\"search\" placeholder=\"Search the guides\" autocomplete=\"off\"></div></div>",
+      "css": ".ds-search{max-width:260px;font-family:'DM Sans','XShot Sans',sans-serif;} .ds-search label{font-size:11px;color:var(--muted,#5d687d);display:block;margin-bottom:8px} .ds-search-wrap{position:relative} .ds-search-wrap svg{position:absolute;left:11px;top:12px;color:#6b7890} .ds-search input{box-sizing:border-box;width:100%;padding:11px 10px 11px 34px;border:1px solid #cbd5e2;border-radius:7px;color:var(--ink,#10121c);background:var(--soft,#f8faff);font:12px \"DM Sans\",\"XShot Sans\",sans-serif;appearance:none;caret-color:var(--blue,#1768f6)} .ds-search input::placeholder{color:#647083;opacity:1} .ds-search input:focus-visible{outline:3px solid var(--brand,#3478f6);outline-offset:5px;}"
+    },
+    {
+      "name": "Hero Navigation",
+      "kind": "nav",
+      "refersTo": "hero-navigation",
+      "description": "White header links on their blue field, with a growing white hover underline.",
+      "html": "<div class=\"ds-nav-field\"><nav class=\"ds-hero-nav\" aria-label=\"Main navigation\"><a href=\"#features\">Features</a><a href=\"#docs\">Docs</a><a href=\"#github\">GitHub</a></nav></div>",
+      "css": ".ds-nav-field{background:linear-gradient(118deg,#3974f7 0%,#346bf1 44%,#2b5fe9 100%);padding:20px} .ds-hero-nav{display:flex;align-items:center;gap:32px;font-size:13px;font-weight:500;color:#fff;font-family:'DM Sans','XShot Sans',sans-serif;} .ds-hero-nav a{display:flex;align-items:center;padding-block:12px;position:relative;color:inherit;text-decoration:none} .ds-hero-nav a::after{content:\"\";position:absolute;bottom:5px;left:0;height:2px;width:100%;background:#fff;transform:scaleX(0);transform-origin:left;transition:transform .22s cubic-bezier(.16,1,.3,1)} .ds-hero-nav a:hover::after{transform:scaleX(1)} .ds-hero-nav a:focus-visible{outline:3px solid var(--brand,#3478f6);outline-offset:5px;} @media(prefers-reduced-motion:reduce){.ds-hero-nav a::after{transition:none}}"
+    },
+    {
+      "name": "Keyboard Shortcut",
+      "kind": "chip",
+      "refersTo": "keyboard-key",
+      "description": "A keyboard label with its selected gallery state.",
+      "html": "<div class=\"ds-key-example\"><kbd class=\"ds-key\">⌥ X</kbd><kbd class=\"ds-key ds-key-selected\">⌥ X</kbd></div>",
+      "css": ".ds-key-example{display:flex;gap:16px} .ds-key{font-family:'DM Sans','XShot Sans',sans-serif;white-space:nowrap;font-size:.82em;font-weight:500;border:1px solid #cbd5e7;border-radius:5px;padding:4px 7px;background:white;color:#40516d;font-variant-numeric:tabular-nums} .ds-key-selected{background:var(--blue,#1768f6);border-color:var(--blue,#1768f6);color:#fff}"
+    },
+    {
+      "name": "Feature Symbol",
+      "kind": "custom",
+      "refersTo": "feature-symbol",
+      "description": "A compact blue SVG in a pale rounded-square field above an open feature column.",
+      "html": "<span class=\"ds-feature-symbol\" aria-hidden=\"true\"><svg viewBox=\"0 0 32 32\" fill=\"none\"><path d=\"M12 5H6v6m14-6h6v6M6 21v6h6m14-6v6h-6\"/></svg></span>",
+      "css": ".ds-feature-symbol{display:flex;align-items:center;justify-content:center;width:60px;height:60px;background:var(--feature-tile,#e9f0ff);color:#356dff;border-radius:15px}.ds-feature-symbol svg{width:33px;height:33px;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}"
+    },
+    {
+      "name": "Project Folder Container",
+      "kind": "card",
+      "refersTo": "project-folder",
+      "description": "A pale container for local project information.",
+      "html": "<div class=\"ds-folder\"><div class=\"ds-folder-heading\"><svg width=\"44\" height=\"44\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linejoin=\"round\"/></svg><span><strong>My demo.xshotdemo</strong><small>~/Movies/XShot/</small></span></div><p>Project files stay on your Mac.</p></div>",
+      "css": ".ds-folder{background:#f1f5fe;border-radius:12px;padding:25px 28px;max-width:470px;color:var(--ink,#10121c);font-family:'DM Sans','XShot Sans',sans-serif;} .ds-folder-heading{display:flex;align-items:center;gap:18px;padding:10px 0} .ds-folder-heading svg{color:var(--blue,#1768f6);flex-shrink:0} .ds-folder strong{font-size:15px;font-weight:600;display:block} .ds-folder small{display:block;font-size:12px;color:var(--muted,#5d687d);margin-top:8px} .ds-folder p{font-size:12px;line-height:1.8;color:var(--muted,#5d687d);margin:22px 0 0}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Opening Sheet",
+    "overview": "A saturated blue field holds white type, the approved white wordmark and three overlapping screenshot sheets. The front sheet opens at its lower-right corner to show a lit white reverse; handwritten pointers explain capture, annotation and the finished result. A shallow asymmetric wave joins this material scene to a white, image-led feature overview. Following the user’s 2026-11-02 refinement, the blue hero and white sections extend to the viewport edges without an outer presentation frame or page corner radius; the centered inner content column retains its reading gutters.\n\nThe screenshot fronts remain authentic XShot interface pixels. Website annotations and paper shading are separate editorial layers. Promotional pages use this physical, expressive language; help pages retain a quiet white reading surface, shared sans typography and blue navigation. The exact approved open-corner identity remains an asset, not a shape to redraw. The recording section embeds an authentic unchanged XShot single-file HTML export; its native player styling is separate product evidence, while the surrounding toolbar, caption and links follow this website system.\n\nThis system replaces the earlier white annotation-ribbon world following the user's explicit selection on 2026-11-02. The current source and its cascade are normative. This document records the implementation, not an exact image-match or shipping verdict; comparison receipts remain in the build evidence.",
+    "keyCharacteristics": [
+      "Saturated blue presentation with white type and pill actions.",
+      "Real screenshot fronts, pale sheet planes and a physically bent white reverse.",
+      "Handwritten English and Chinese pointers confined to annotation roles.",
+      "Three open feature columns immediately below a shallow white wave.",
+      "One finite opening, direct corner peeling and sheet controls with keyboard, touch and authentic-image fallback access.",
+      "An authentic offline five-step, four-hotspot HTML walkthrough, embedded without restyling its native player."
+    ],
+    "rules": [
+      {
+        "name": "The Field Changes the Action Rule",
+        "body": "Use white pills and white navigation inside the blue promotional field; use blue actions and reading links on white surfaces.",
+        "section": "colors"
+      },
+      {
+        "name": "The Handwriting Has a Pointer Rule",
+        "body": "Use Caveat or Zhi Mang Xing for short annotation captions and the paper note; keep paragraphs, controls and documentation in the sans family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Reverse Is Material Rule",
+        "body": "A paper curl reveals a lit white underside and the layers behind it; preserve that material relationship rather than substituting a flat triangular overlay.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Opening Rule",
+        "body": "Play one finite sheet-opening moment and settle; subsequent animation follows replay or a direct local interaction.",
+        "section": "components"
+      },
+      {
+        "name": "The Export Is Evidence Rule",
+        "body": "Embed the byte-identical native HTML export in its own titled, lazy-loaded script-only sandbox. Preserve its player styling and English content; localize the surrounding site labels and identify the English sample on the Chinese page. The frame is 16:10 with desktop 620–860px, medium minimum 560px and mobile 460px. Keep full-view and single-file download links. Its five embedded screenshots and four hotspots guide recorded states, without live app control or network dependencies.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do preserve the approved symbol and exact wordmark, choosing the white variant inside the blue hero.",
+      "Do keep real screenshot pixels, native control proportions and their provenance intact.",
+      "Do keep website annotation overlays distinct from native application controls.",
+      "Do use white pills on the blue promotional field and blue actions on white reading surfaces.",
+      "Do preserve the white reverse, soft shading and visible rear planes when extending the paper material.",
+      "Do retain keyboard states, a complete reduced-motion scene and the authentic-image fallback.",
+      "Do preserve the original exported player and its source/hash provenance; apply site tokens only to its surrounding toolbar, caption and links."
+    ],
+    "donts": [
+      "Don't redraw, stretch or close the brand mark's open corner.",
+      "Don't substitute generated interface content for actual product evidence.",
+      "Don't extend handwriting into paragraphs, ordinary controls or documentation.",
+      "Don't turn the paper-opening sequence into an endless decorative loop.",
+      "Don't turn every lower section or help topic into a tilted sheet or enclosed card.",
+      "Don't describe screenshot-hotspot navigation as operating a live app, and don't restyle the authentic exported player as a website mockup."
+    ]
+  }
+}

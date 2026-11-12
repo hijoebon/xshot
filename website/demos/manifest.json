@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "exports": [
+    {
+      "file": "release-workflow.html",
+      "title": "Release workflow",
+      "language": "en",
+      "bytes": 3470675,
+      "sha256": "5225873921a27d345aac47c9d1b1f44b4dd88c835215d0e4511445ed44ca6c73",
+      "stepCount": 5,
+      "hotspotCount": 4,
+      "screenshotSize": {
+        "width": 1920,
+        "height": 1244
+      },
+      "source": {
+        "path": "artifacts/product-demo-20261101/v5/exports/Release workflow.html",
+        "kind": "unmodified single-file HTML exported by XShot",
+        "evidence": "artifacts/product-demo-20261101/v5/delivery-notes.md",
+        "note": "Created with a task-local English demonstration build. This does not claim the current public application has shipped English localization."
+      },
+      "contentNote": "Launchboard is a demonstration workspace recorded by XShot. This guide advances recorded screenshot states; it does not operate the live workspace. Step titles and descriptions were edited manually.",
+      "format": {
+        "screenshots": "embedded data:image/png;base64",
+        "networkRequests": false,
+        "controls": [
+          "hotspot",
+          "previous",
+          "next",
+          "replay",
+          "finish",
+          "try again"
+        ]
+      }
+    }
+  ]
+}

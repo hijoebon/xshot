@@ -1,0 +1,128 @@
+{
+  "origin": "Composed authentic interface details from XShot native editor and local demonstration canvas. Editorial cutaway assembled from real screenshot pixels; not a single raw screenshot. No generated UI, redrawn controls, invented labels, or altered text.",
+  "kind": "composed authentic interface details",
+  "output": {
+    "width": 2400,
+    "height": 520,
+    "aspect_ratio": "60:13",
+    "runtime_fit": "contain; center top; no additional crop",
+    "recommended_runtime_size": [
+      1536,
+      332.8
+    ]
+  },
+  "sources": [
+    {
+      "path": "artifacts/product-demo-20261101/beauty-preview.png",
+      "sha256": "8fa62a96f18e03dc66006c733736354c4c05a3559bd75320d378a6b3a84f3f4f"
+    },
+    {
+      "path": "artifacts/product-demo-20261101/canvas-preview.png",
+      "sha256": "ee9bba0faac68f50fc7571d9e487e585d5a2a8f81e34d81859f1b0b0b9f97bab"
+    }
+  ],
+  "composition": [
+    {
+      "detail": "complete native toolbar",
+      "source": 0,
+      "crop_xywh": [
+        360,
+        8,
+        2160,
+        78
+      ],
+      "uniform_scale": 1.1111111111111112,
+      "output_xy": [
+        0,
+        0
+      ],
+      "output_size": [
+        2400,
+        87
+      ]
+    },
+    {
+      "detail": "canvas heading and project action",
+      "source": 1,
+      "crop_xywh": [
+        508,
+        166,
+        1864,
+        112
+      ],
+      "uniform_scale": 0.78,
+      "output_xy": [
+        90,
+        95
+      ],
+      "output_size": [
+        1454,
+        87
+      ]
+    },
+    {
+      "detail": "canvas filters and project count",
+      "source": 1,
+      "crop_xywh": [
+        508,
+        328,
+        1864,
+        50
+      ],
+      "uniform_scale": 0.78,
+      "output_xy": [
+        90,
+        185
+      ],
+      "output_size": [
+        1454,
+        39
+      ]
+    },
+    {
+      "detail": "two complete useful first-row project cards",
+      "source": 1,
+      "crop_xywh": [
+        508,
+        478,
+        1864,
+        370
+      ],
+      "uniform_scale": 0.78,
+      "output_xy": [
+        90,
+        226
+      ],
+      "output_size": [
+        1454,
+        289
+      ]
+    },
+    {
+      "detail": "complete styling popover, including help and reset",
+      "source": 0,
+      "crop_xywh": [
+        1755,
+        65,
+        600,
+        880
+      ],
+      "uniform_scale": 0.49,
+      "output_xy": [
+        1736,
+        78
+      ],
+      "output_size": [
+        294,
+        431
+      ],
+      "mask": "native outer contour only; unchanged interior pixels"
+    }
+  ],
+  "editorial_treatment": [
+    "neutral canvas-color backing",
+    "condensed blank gap between header and cards",
+    "subtle popover drop shadow"
+  ],
+  "preserved": "All original native controls, their order, labels, values, and internal proportions. Original product-demo source artifacts remain unmodified."
+}

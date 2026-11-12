@@ -1,0 +1,15 @@
+{
+  "family": "DM Sans",
+  "style": "normal",
+  "weight": "400 900",
+  "format": "woff2",
+  "subset": "latin",
+  "source": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..900&display=swap",
+  "downloadUrl": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2",
+  "upstream": "https://github.com/google/fonts/tree/main/ofl/dmsans",
+  "license": "DM-Sans-OFL.txt",
+  "licenseSource": "https://raw.githubusercontent.com/google/fonts/main/ofl/dmsans/OFL.txt",
+  "bytes": 36980,
+  "sha256": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb",
+  "downloadedAt": "2026-11-01T15:20:58.549891+00:00"
+}
