@@ -6,9 +6,11 @@ XShot is a native macOS app for screenshots and product demos. Mark up a screens
 
 **[Download XShot for macOS](https://github.com/hijoebon/xshot/releases/latest)**
 
-Apple Silicon · macOS 14 or later · The current app interface is in Simplified Chinese.
+Apple Silicon · macOS 14 or later
 
-<img src="website/assets/plates/native-editor.png" width="740" alt="XShot’s screenshot editor with the annotation toolbar and styling controls visible">
+<img src="Docs/images/xshot-editor-en.png" width="740" alt="XShot’s English screenshot editor with blue annotations and the Screenshot Style panel open">
+
+*Screenshot from the English demo build. The current public release uses a Simplified Chinese interface.*
 
 ## Install and open
 
