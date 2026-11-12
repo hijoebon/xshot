@@ -15,7 +15,7 @@
 
 构建输出为 `dist/XShot.app`。构建采用本机临时签名，不包含 Developer ID 签名或公证。检查以合成图片和 Node.js 的 DOM 替身验证离线 HTML 导出、转义、导航与热点逻辑，不启动应用窗口或浏览器，也不采集屏幕。
 
-根据改动补跑相关的 `scripts/check-*.sh`；各脚本的用途见 [README](README.md#验证)。部分 AppKit 检查依赖图形登录会话、隐藏窗口或系统服务，`check-demo-studio.sh` 还需要先运行 `check-demo-video.sh`。真实截图、录屏权限、多屏行为与视觉效果需要在本机手动验证，不能由离线检查代替。请参阅 [VERIFICATION.md](VERIFICATION.md)。
+根据改动补跑相关的 `scripts/check-*.sh`。部分 AppKit 检查依赖图形登录会话、隐藏窗口或系统服务，`check-demo-studio.sh` 还需要先运行 `check-demo-video.sh`。真实截图、录屏权限、多屏行为与视觉效果需要在本机手动验证。脚本覆盖范围与实测记录见 [VERIFICATION.md](VERIFICATION.md)。
 
 ## CI 与复现
 
@@ -40,3 +40,10 @@ export SWIFT_MODULE_CACHE_PATH="$PWD/.build/ModuleCache"
 - 使用第三方代码、素材或依赖前确认其许可证，并保留必要的来源与声明。
 
 提交贡献即表示你有权按本项目的 [MIT 许可证](LICENSE) 提供这些内容。
+
+## 实现来源
+
+- XShot 使用独立编写的源代码和 Apple 公开系统框架，包括 AppKit、ScreenCaptureKit、AVFoundation、Core Image、Core Graphics、WebKit 和 Carbon。应用构建没有外部代码依赖。
+- 需求与交互研究参考了公开可见的截图和演示工具体验，感谢 [iShot](https://www.better365.cn/ishot.html)、[Screen Studio](https://screen.studio/)、[Cap](https://cap.so/)、[Arcade](https://www.arcade.software/product/interactive-demo) 和 [Supademo](https://supademo.com/features/guided-demos) 提供的产品参考。相关名称与商标归各自权利人所有，列出参考不表示关联或背书。
+- 早期调研包含对本机已安装参考应用的版本、依赖及类名的只读检查。项目未复用上述产品的源码、反编译代码、二进制或资产，开发过程不属于严格的隔离式 clean-room。
+- 截图 API 参见 Apple 的 [SCScreenshotManager 文档](https://developer.apple.com/documentation/screencapturekit/scscreenshotmanager)。
