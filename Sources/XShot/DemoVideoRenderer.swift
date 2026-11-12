@@ -455,6 +455,14 @@ enum DemoVideoError: LocalizedError {
 }
 
 final class DemoVideoRenderer {
+    // Match the HDTV ICC profile VideoToolbox uses for decoded 709 buffers.
+    // The named .itur_709 CGColorSpace has a different transfer curve and lifts
+    // shadows each time an exported movie passes through this renderer again.
+    private static let videoColorSpace = CVImageBufferCreateColorSpaceFromAttachments([
+        kCVImageBufferColorPrimariesKey as String: kCVImageBufferColorPrimaries_ITU_R_709_2,
+        kCVImageBufferTransferFunctionKey as String: kCVImageBufferTransferFunction_ITU_R_709_2,
+        kCVImageBufferYCbCrMatrixKey as String: kCVImageBufferYCbCrMatrix_ITU_R_709_2
+    ] as CFDictionary)!.takeRetainedValue()
     private let lock = NSLock()
     private var cancelled = false
     private var exporting = false
@@ -559,10 +567,8 @@ final class DemoVideoRenderer {
                         throw DemoVideoError.failed("无法分配视频帧")
                     }
                     let image = compositor.image(CIImage(cvPixelBuffer: source), project: project, at: sourceTime)
-                    // Match rendered transfer values to the H.264 colour description. An
-                    // untagged sRGB buffer is otherwise interpreted again during playback.
                     compositor.context.render(image, to: rendered, bounds: CGRect(origin: .zero, size: compositor.size),
-                                              colorSpace: CGColorSpace(name: CGColorSpace.itur_709))
+                                              colorSpace: Self.videoColorSpace)
                     CVBufferSetAttachment(rendered, kCVImageBufferColorPrimariesKey, kCVImageBufferColorPrimaries_ITU_R_709_2, .shouldPropagate)
                     CVBufferSetAttachment(rendered, kCVImageBufferTransferFunctionKey, kCVImageBufferTransferFunction_ITU_R_709_2, .shouldPropagate)
                     CVBufferSetAttachment(rendered, kCVImageBufferYCbCrMatrixKey, kCVImageBufferYCbCrMatrix_ITU_R_709_2, .shouldPropagate)

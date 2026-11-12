@@ -92,6 +92,106 @@ import CoreImage
         return count
     }
 
+    static func writeGraySource(to url: URL) async throws {
+        try? FileManager.default.removeItem(at: url)
+        let writer = try AVAssetWriter(outputURL: url, fileType: .mov)
+        let input = AVAssetWriterInput(mediaType: .video, outputSettings: [
+            AVVideoCodecKey: AVVideoCodecType.h264, AVVideoWidthKey: 640, AVVideoHeightKey: 360,
+            AVVideoColorPropertiesKey: [AVVideoColorPrimariesKey: AVVideoColorPrimaries_ITU_R_709_2,
+                AVVideoTransferFunctionKey: AVVideoTransferFunction_ITU_R_709_2,
+                AVVideoYCbCrMatrixKey: AVVideoYCbCrMatrix_ITU_R_709_2],
+            AVVideoCompressionPropertiesKey: [AVVideoAverageBitRateKey: 2_000_000]
+        ])
+        let adaptor = AVAssetWriterInputPixelBufferAdaptor(assetWriterInput: input, sourcePixelBufferAttributes: [
+            kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA,
+            kCVPixelBufferWidthKey as String: 640, kCVPixelBufferHeightKey as String: 360,
+            kCVPixelBufferIOSurfacePropertiesKey as String: [:]
+        ])
+        writer.add(input)
+        require(writer.startWriting(), "Cannot start gray video fixture")
+        writer.startSession(atSourceTime: .zero)
+        let grays: [UInt8] = [8, 16, 35, 64, 96, 128, 160, 208]
+        for frame in 0..<12 {
+            while !input.isReadyForMoreMediaData { try await Task.sleep(nanoseconds: 2_000_000) }
+            var buffer: CVPixelBuffer?
+            require(CVPixelBufferPoolCreatePixelBuffer(nil, adaptor.pixelBufferPool!, &buffer) == kCVReturnSuccess,
+                    "Cannot create gray fixture buffer")
+            let pixels = buffer!
+            CVPixelBufferLockBaseAddress(pixels, [])
+            let base = CVPixelBufferGetBaseAddress(pixels)!.assumingMemoryBound(to: UInt8.self)
+            let stride = CVPixelBufferGetBytesPerRow(pixels)
+            for y in 0..<360 {
+                for x in 0..<640 {
+                    let value = grays[x / 80], index = y * stride + x * 4
+                    base[index] = value; base[index + 1] = value; base[index + 2] = value; base[index + 3] = 255
+                }
+            }
+            CVPixelBufferUnlockBaseAddress(pixels, [])
+            CVBufferSetAttachment(pixels, kCVImageBufferColorPrimariesKey, kCVImageBufferColorPrimaries_ITU_R_709_2, .shouldPropagate)
+            CVBufferSetAttachment(pixels, kCVImageBufferTransferFunctionKey, kCVImageBufferTransferFunction_ITU_R_709_2, .shouldPropagate)
+            CVBufferSetAttachment(pixels, kCVImageBufferYCbCrMatrixKey, kCVImageBufferYCbCrMatrix_ITU_R_709_2, .shouldPropagate)
+            require(adaptor.append(pixels, withPresentationTime: CMTime(value: Int64(frame), timescale: 60)),
+                    "Cannot append gray fixture frame")
+        }
+        writer.endSession(atSourceTime: CMTime(value: 12, timescale: 60))
+        input.markAsFinished()
+        await writer.finishWriting()
+        require(writer.status == .completed, "Cannot finish gray video fixture")
+    }
+
+    static func firstDecodedColors(_ url: URL, points: [CGPoint]) async throws -> [[Int]] {
+        let asset = AVURLAsset(url: url)
+        let track = try await asset.loadTracks(withMediaType: .video).first!
+        let reader = try AVAssetReader(asset: asset)
+        let output = AVAssetReaderTrackOutput(track: track, outputSettings: [
+            kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA
+        ])
+        reader.add(output)
+        require(reader.startReading(), "Cannot decode gray video")
+        guard let sample = output.copyNextSampleBuffer(), let pixels = CMSampleBufferGetImageBuffer(sample) else {
+            fatalError("Gray video has no decoded frame")
+        }
+        defer { reader.cancelReading() }
+        CVPixelBufferLockBaseAddress(pixels, .readOnly)
+        defer { CVPixelBufferUnlockBaseAddress(pixels, .readOnly) }
+        let base = CVPixelBufferGetBaseAddress(pixels)!.assumingMemoryBound(to: UInt8.self)
+        let stride = CVPixelBufferGetBytesPerRow(pixels)
+        // Read the decoder's actual BGRA bytes: CGImage conversion would introduce
+        // another profile conversion and could hide the export transfer mismatch.
+        return points.map { point in
+            let index = Int(point.y.rounded()) * stride + Int(point.x.rounded()) * 4
+            return [Int(base[index + 2]), Int(base[index + 1]), Int(base[index])]
+        }
+    }
+
+    @MainActor static func colorIdentityChecks(directory: URL) async throws {
+        var source = directory.appendingPathComponent("color-identity-source.mov")
+        try await writeGraySource(to: source)
+        var points = (0..<8).map { CGPoint(x: 40 + $0 * 80, y: 180) }
+        let reference = try await firstDecodedColors(source, points: points)
+        for (actual, value) in zip(reference, [8, 16, 35, 64, 96, 128, 160, 208]) {
+            require(actual.allSatisfy { abs($0 - value) <= 2 }, "Gray fixture encoding changed its known levels")
+        }
+        let content = DemoFrameCompositor(width: 640, height: 360).contentRect
+        for generation in 1...3 {
+            var project = DemoProject(videoFile: source.lastPathComponent, width: 640, height: 360, duration: 0.2)
+            project.autoZoom = false; project.showCursor = false; project.showClicks = false
+            let destination = directory.appendingPathComponent("color-identity-\(generation).mp4")
+            try await DemoVideoRenderer().export(project: project, directory: directory, to: destination) { _ in }
+            // Each real export adds its normal decoration; follow the same source
+            // patches through that geometry instead of sampling a new margin.
+            points = points.map { CGPoint(x: content.minX + $0.x * content.width / 640,
+                y: 360 - content.maxY + $0.y * content.height / 360) }
+            let actual = try await firstDecodedColors(destination, points: points)
+            for index in reference.indices {
+                require(zip(actual[index], reference[index]).allSatisfy { abs($0 - $1) <= 4 },
+                        "Gray transfer drift at generation \(generation), patch \(index): \(actual[index]) vs \(reference[index])")
+            }
+            source = destination
+        }
+        print("PASS: actual decoded BGRA low/mid-gray levels survive three real MP4 export generations within 4 code values")
+    }
+
     static func decodedSourceImage(_ asset: AVAsset, at time: Double) async throws -> CIImage {
         let track = try await asset.loadTracks(withMediaType: .video).first!
         let reader = try AVAssetReader(asset: asset)
@@ -525,6 +625,7 @@ import CoreImage
         mathChecks()
         let directory = URL(fileURLWithPath: CommandLine.arguments.dropFirst().first ?? "artifacts/demo-video-checks", isDirectory: true)
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        try await colorIdentityChecks(directory: directory)
         let source = directory.appendingPathComponent("recording.mov")
         try? FileManager.default.removeItem(at: source)
         try await writeSource(to: source, width: 640, height: 360, seconds: 4)
